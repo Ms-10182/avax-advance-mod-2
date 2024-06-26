@@ -5,10 +5,20 @@ This project uses HyperSDK that provides the ability to create a custom virtual 
 
 ## Description 
 ```consts/consts.go``` contains the constants that is accessible across the hyperVM. The HRP, Name, and Symbol constants define information about the TokenVM, including its Human-Readable Part (HRP), name, and symbol.<br>
-I have added the required values as per project requirements.
+Required values are added as per project requirements.
+```GO
+const (
+	// TODO: choose a human-readable part for your hyperchain
+	HRP = "OffYourFeet"
+	// TODO: choose a name for your hyperchain
+	Name = "Breach"
+	// TODO: choose a token symbol
+	Symbol = "BR"
+)
+```
 
 ```registry/registry.go``` contains the action that will be performed in the terminal during interaction.<br>
-I have added the required values as per project requirements.
+Required values are added as per project requirements.
 
 ## Steps of Execution
 This project is execute on WSl on windows and GO installed inside wsl.<br>
