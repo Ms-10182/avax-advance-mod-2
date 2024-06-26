@@ -27,7 +27,7 @@ consts.ActionRegistry.Register(&actions.MintAsset{}, actions.UnmarshalMintAsset,
 ```
 
 ## Steps of Execution
-This project is execute on WSl on windows and GO installed inside wsl.<br>
+This project is executed on WSl on windows and GO installed inside wsl.<br>
 1) run ```git clone https://github.com/Ms-10182/avax-advance-mod-2.git```
 2) run ```cd avax-advance-mod-2```
 3) Github is not allowing me to upload the files due to large no of files so I added the zip file.
