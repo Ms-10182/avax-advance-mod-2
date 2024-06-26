@@ -112,12 +112,27 @@ metadata: GoCoin supply: 100 warp: false
 balance: 100 2fwV7cjRpH7jmK43BWtUc6uTo5Py6wKXBfdQ4CH6BwRMmEmdDe
 ```
 
-### Additional to watcht the blockchain
-run the command 
+
+### Transfer assets
+spilt terminal and in 1st run the command 
 ```javascript
 ./build/token-cli chain watch
 ```
-and from the listed chainID enter the desired index of the chainID and it will start live watching of the blockchain.
+enter 0 and execute it
+in second terminal run
+```javascript
+./build/token-cli action transfer
+```
+then enter the assetID which we earlier created and enter the recepient address in this case we are don't have other address so we will transfer to ourself and see the transaction in first terminal. enter the amount and continue.
+In first terminal output will be like:
+```javascript
+watching for new blocks on WLRGfhBikjj1YoJ2wXC8oagKdfL7k1EudK2kTzMfjHFzPyLdk 👀
+height:5 txs:1 units:472 root:xbWQpZbEG1SgaUnL4TLcd6XHBa9WxYLdRFru5YDnUCYEqwfUT
+✅ edFd4xPGkRSrBUsmvtvhDnoYJCW2VutzmqCNq1FJXmBLygz46 actor: token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp units: 472 summary (*actions.Transfer): [100 2pG64yry0dl97nsjzf3yp units: 472 summary (*actions.Transfer): [100 2pG64Tt3hAUVK627fGnpqTPKjz8RsPmnBLXvA9ijQZs
+Tt3hAUVK627fGnpqTPKjz8RsPmnBLXvA9ijQZs3Q2JoQs -> token1rvzhmceq997zntgvravfagsks6w0ryud3rylh4cdvayry0dl97nsjzf3yp]
+```
+This represents 100 assets were transfered.
+
 
 ### Closing 
 run the command 
