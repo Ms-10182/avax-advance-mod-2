@@ -19,6 +19,12 @@ const (
 
 ```registry/registry.go``` contains the action that will be performed in the terminal during interaction.<br>
 Required values are added as per project requirements.
+```GO
+// TODO: register action: actions.CreateAsset
+consts.ActionRegistry.Register(&actions.CreateAsset{}, actions.UnmarshalCreateAsset, false),
+// TODO: register action: actions.MintAsset
+consts.ActionRegistry.Register(&actions.MintAsset{}, actions.UnmarshalMintAsset, false),
+```
 
 ## Steps of Execution
 This project is execute on WSl on windows and GO installed inside wsl.<br>
