@@ -4,30 +4,12 @@ This project uses HyperSDK that provides the ability to create a custom virtual 
 
 
 ## Description 
-```consts/consts.go``` contains the constants that is accessible across the hyperVM. The HRP, Name, and Symbol constants define information about the TokenVM, including its Human-Readable Part (HRP), name, and symbol.<br>
-Required values are added as per project requirements.
-```GO
-const (
-	// TODO: choose a human-readable part for your hyperchain
-	HRP = "OffYourFeet"
-	// TODO: choose a name for your hyperchain
-	Name = "Breach"
-	// TODO: choose a token symbol
-	Symbol = "BR"
-)
-```
+```consts/consts.go``` contains the constants that is accessible across the hyperVM. The HRP, Name, and Symbol constants define information about the TokenVM, including its Human-Readable Part (HRP), name, and symbol.
 
-```registry/registry.go``` contains the action that will be performed in the terminal during interaction.<br>
-Required values are added as per project requirements.
-```GO
-// TODO: register action: actions.CreateAsset
-consts.ActionRegistry.Register(&actions.CreateAsset{}, actions.UnmarshalCreateAsset, false),
-// TODO: register action: actions.MintAsset
-consts.ActionRegistry.Register(&actions.MintAsset{}, actions.UnmarshalMintAsset, false),
-```
+```registry/registry.go``` contains the action that will be performed in the terminal during interaction.
 
 ## Steps of Execution
-This project is executed on WSl on windows and GO installed inside wsl.<br>
+This project is execute on WSl on windows and GO installed inside wsl.<br>
 1) run ```git clone https://github.com/Ms-10182/avax-advance-mod-2.git```
 2) run ```cd avax-advance-mod-2```
 3) Github is not allowing me to upload the files due to large no of files so I added the zip file.
